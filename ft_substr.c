@@ -1,20 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marshaky <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/18 19:28:02 by marshaky          #+#    #+#             */
-/*   Updated: 2025/01/22 05:37:07 by marshaky         ###   ########.fr       */
+/*   Created: 2025/01/21 19:40:23 by marshaky          #+#    #+#             */
+/*   Updated: 2025/01/22 05:52:02 by marshaky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	if (c > 31 && c < 127)
-		return (1);
-	return (0);
 }
