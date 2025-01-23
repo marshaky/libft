@@ -6,7 +6,7 @@
 /*   By: marshaky <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 22:09:09 by marshaky          #+#    #+#             */
-/*   Updated: 2025/01/19 23:21:06 by marshaky         ###   ########.fr       */
+/*   Updated: 2025/01/24 02:13:02 by marshaky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	const unsigned char	*p;
 	size_t				i;
 
+	p = str;
 	i = 0;
 	while (i < n)
 	{

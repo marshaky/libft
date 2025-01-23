@@ -6,7 +6,7 @@
 /*   By: marshaky <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 22:07:58 by marshaky          #+#    #+#             */
-/*   Updated: 2025/01/19 01:13:54 by marshaky         ###   ########.fr       */
+/*   Updated: 2025/01/24 02:22:40 by marshaky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
 
+	i = 0;
 	while (str[i] != '\0')
 	{
 		if (str[i] == (char)c)
