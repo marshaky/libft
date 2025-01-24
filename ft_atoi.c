@@ -6,13 +6,13 @@
 /*   By: marshaky <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 22:10:51 by marshaky          #+#    #+#             */
-/*   Updated: 2025/01/20 00:53:31 by marshaky         ###   ########.fr       */
+/*   Updated: 2025/01/24 03:28:39 by marshaky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_space(char c)
+static int	is_space(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\r' || c == '\v' \
 			|| c == '\f' || c == '\n')
@@ -20,7 +20,7 @@ int	is_space(char c)
 	return (0);
 }
 
-int	is_digit(char c)
+static int	is_digit(char c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
