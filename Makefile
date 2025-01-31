@@ -1,3 +1,4 @@
+SRCS			= $(SRC) $(BONUS)
 OBJS			= $(SRCS:.c=.o)
 
 SRC				=	ft_strdup.c ft_atoi.c ft_strlcat.c \
