@@ -15,5 +15,5 @@ Libft consists of:
 3. **Bonus Part:** Implementing linked list manipulation functions.
 
 ## Note
-- Most file and function names are prefixed with `ft`. This stands for "Forty Two," indicating their association with 42.
+- Most file and function names are prefixed with `ft`. This stands for "Forty Two", indicating their association with 42.
 - The project instructions mandate that all source files be placed in the root directory. However, for the organization of this GitHub repository, the files are divided into subfolders.
