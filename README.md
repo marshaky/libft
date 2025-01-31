@@ -1,10 +1,10 @@
-#**Libft** - Your First Own Library
+# **Libft** - Your First Own Library
 
-##📌 Introduction
+## 📌 Introduction
 
 **Libft** is a project aimed at building a custom C library that reimplements standard libc functions and additional useful utilities. This library will be a fundamental tool for future projects at 42 School.
 
-##📜 Project Description
+## 📜 Project Description
 
 Libft consists of:
 
@@ -14,6 +14,6 @@ Libft consists of:
 
 **3.Bonus Part:** Implementing linked list manipulation functions.
 
-##Note
+## Note
 -Most file and function names are prefixed with `ft`. This stands for "Forty Two," indicating their association with 42.
 -The project instructions mandate that all source files be placed in the root directory. However, for the organization of this GitHub repository, the files are divided into subfolders.
