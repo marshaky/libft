@@ -8,11 +8,11 @@
 
 Libft consists of:
 
-**1.Mandatory Part:** Reimplementing a set of standard libc functions with the prefix ft_.
+1. **Mandatory Part:** Reimplementing a set of standard libc functions with the prefix ft_.
 
-**2.Additional Functions:** Implementing useful functions not found in libc.
+2. **Additional Functions:** Implementing useful functions not found in libc.
 
-**3.Bonus Part:** Implementing linked list manipulation functions.
+3.**Bonus Part:** Implementing linked list manipulation functions.
 
 ## Note
 -Most file and function names are prefixed with `ft`. This stands for "Forty Two," indicating their association with 42.
