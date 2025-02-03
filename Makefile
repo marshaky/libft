@@ -1,5 +1,4 @@
-SRCS			= $(SRC) $(BONUS)
-OBJS			= $(SRCS:.c=.o)
+NAME			= libft.a
 
 SRC				=	ft_strdup.c ft_atoi.c ft_strlcat.c \
 					ft_striteri.c ft_bzero.c \
@@ -15,25 +14,27 @@ SRC				=	ft_strdup.c ft_atoi.c ft_strlcat.c \
 					ft_putstr_fd.c ft_tolower.c ft_split.c \
 					ft_toupper.c ft_strchr.c
 
+OBJS			= $(SRC:.c=.o)
+
 BONUS			=	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
 					ft_lstdelone.c ft_lstiter.c ft_lstlast.c \
 					ft_lstmap.c ft_lstnew.c ft_lstsize.c
+
 BONUS_OBJS		= $(BONUS:.c=.o)
 
-SRC_OBJS		= $(SRC:.c=.o)
-
+HEADER			= libft.h
+AR				= ar rcs
+RM				= rm -rf
 CC				= cc
-RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -I.
+CFLAGS			= -Wall -Wextra -Werror
 
-NAME			= libft.a
+%.o: %.c		$(HEADER) Makefile
+					$(CC) $(CFLAGS) -c $< -o $@
 
+all:			$(NAME)
 
 $(NAME):		$(OBJS)
-					ar rcs $(NAME) $(OBJS)
-
-all:			$(OBJS)
-					ar rcs $(NAME) $(OBJS)
+					$(AR) $(NAME) $(OBJS)
 
 clean:
 					$(RM) $(OBJS) $(BONUS_OBJS)
@@ -41,14 +42,9 @@ clean:
 fclean:			clean
 					$(RM) $(NAME)
 
-re:				fclean $(NAME)
+re:				fclean all
 
-
-source:			$(SRC_OBJS)
-					ar rcs $(NAME) $(SRC_OBJS)
-
-bonus:			$(BONUS_OBJS)
-					ar rcs $(NAME) $(BONUS_OBJS)
-
+bonus:			$(OBJS) $(BONUS_OBJS)
+					$(AR) $(NAME) $(OBJS) $(BONUS_OBJS)
 
 .PHONY:			all clean fclean re bonus
