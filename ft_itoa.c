@@ -27,7 +27,7 @@ static int	digit_cntr(int n)
 	return (i);
 }
 
-int	check_num(int n)
+static int	check_num(int n)
 {
 	int	i;
 
