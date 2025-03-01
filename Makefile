@@ -22,7 +22,6 @@ BONUS			=	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
 
 BONUS_OBJS		= $(BONUS:.c=.o)
 
-HEADER			= libft.h
 AR				= ar rcs
 RM				= rm -rf
 CC				= cc
